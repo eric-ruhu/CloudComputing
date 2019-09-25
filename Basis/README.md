@@ -74,3 +74,83 @@
 
 右键单击Git Bash
 
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/11.png?raw=true)
+
+复制先前创建的代码仓库的url
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/12.png?raw=true)
+
+> git remote add origin https://github.com/eric-ruhu/CloudComputing.git
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/13.png?raw=true)
+
+由于之前我已经新建过代码仓库所以显示已存在，再新建指令也是相同。
+
+>git pull origin master
+>
+>git touch README.md  //由于做本实验的时候已经有这个文件了，在此就用一个test的文本文件替代
+>
+>git status
+>
+>git add .  //添加所有modified文件
+>
+>git status
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/14.png?raw=true)
+
+> git commit -m "test!!!"
+>
+> git push -u origin master
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/15.png?raw=true)
+
+刷新网页可看到上传成功！！！
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/16.png?raw=true)
+
+## 安装VMware Workstation和CentOS系统
+
+* 下载[VMware](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
+* 下载[CentOS](https://www.centos.org/)
+* 创建新的虚拟机
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/17.png?raw=true)
+
+语言设置为英语，安装桌面GUI，并设置开启网络，其他选项自行选择。
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/18.png?raw=true)
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/19.png?raw=true)
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/20.png?raw=true)
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/21.png?raw=true)
+
+***注：由于写报告之前已安装所以有些配置没有截图，这里有几张图参考
+
+此处要注意，网络开启有一个选项最好要打开，不然之后可能会遇到网络打不开需要修改脚本的问题。
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/22.png?raw=true)
+
+设置root用户，设置密码，设置一些选项。
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/23.png?raw=true)
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/24.png?raw=true)
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/25.png?raw=true)
+
+登录成功！！！over！！！
+
+## 后记
+
+安装虚拟机的时候受到舍友很多帮助要不然不知道配到啥时候去哦。。太难了。。
+
+上传GitHub文件途中遇到本地库和远程库冲突的情况（可能是因为我之前把同名文档删除）
+
+解决错误的方法：(https://blog.csdn.net/i_tenkai/article/details/95483289)
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/26.png?raw=true)
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/27.png?raw=true)
+
