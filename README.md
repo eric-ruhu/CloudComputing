@@ -3,7 +3,7 @@
 ## 课程使用平台及技术方案
 
 * [腾讯云](https://cloud.tencent.com/)
-* [GitHub]([https://github.com](https://github.com/))  GitHub入门参考：[GitHubshi使用入门](https://blog.csdn.net/llfjfz/article/details/99747385)
+* [GitHub](https://github.com/)  GitHub入门参考：[GitHub使用入门](https://blog.csdn.net/llfjfz/article/details/99747385)
 
 ## 参考资料
 
@@ -11,5 +11,5 @@
 
 ## 实验目录
 
-* 实验一
+* 实验
 
