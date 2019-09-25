@@ -8,7 +8,7 @@
 
 * 购买[腾讯云学生计划](https://cloud.tencent.com/act/campus)
 
-  
+  ！[](https://github.com/eric-ruhu/CloudComputing/blob/master/Basis/image/1.png?raw=true)
 
 * 下载[Xshell6](http://www.xshellcn.com/xiazai.html)
 
