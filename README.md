@@ -13,7 +13,20 @@
 
 * [实验一](https://github.com/eric-ruhu/CloudComputing/tree/master/Basis)
 
-* 实验二
+* [实验二](https://github.com/eric-ruhu/CloudComputing/tree/master/Website)
 
-  
+## 注意事项
 
+每次上传文件时的步骤：
+
+> git pull
+>
+> git status    //可省略
+>
+> git add .
+>
+> git status    //可省略
+>
+> git commit -m "message"
+>
+> git push
