@@ -273,3 +273,7 @@ WordPress的配置依赖于wp-config.php文件，当前该文件夹下并没有�
 
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Website/website_images/43.png?raw=true)
 
+[IP查看网站链接！！！](http://106.54.62.70/)
+
+[域名查看网站链接！！！](http://www.eric-nam.cn/)
+
