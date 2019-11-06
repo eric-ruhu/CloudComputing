@@ -8,11 +8,11 @@
 
 查看操作系统内核信息：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/1.png?raw=true)
 
 查看Linux版本：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/2.png?raw=true)
 
 ***注：如果当前用户不能使用sudo权限，登录到root用户，在终端键入：
 
@@ -24,27 +24,27 @@
 
 更新应用程序数据库：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/3.png?raw=true)
 
 添加Docker的官方仓库，下载最新的Docker并安装：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/4.png?raw=true)
 
 安装完成后启动Docker守护进程，即Docker服务：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/5.png?raw=true)
 
 验证Docker是否启动：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/6.png?raw=true)
 
-确保Docker当服务器启动时自动启动：
+使Docker当服务器启动时自动启动：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/7.png?raw=true)
 
 查看Docker版本：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/8.png?raw=true)
 
 ## Docker基本操作
 
@@ -58,7 +58,7 @@ Docker命令的基本格式
 
 > docker
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/9.png?raw=true)
 
 特定命令的使用帮助：
 
@@ -66,47 +66,47 @@ Docker命令的基本格式
 
 例：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/10.png?raw=true)
 
 查看当前系统docker的相关信息：
 
 > docker info
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/11.png?raw=true)
 
 （可见当前并未安装任何镜像（Images），运行任何容器（Containers）。）
 
 加载centos镜像命令：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/12.png?raw=true)
 
 ## 在Docker的CentOS容器中安装WordPress
 
 在Docker Hub上创建一个仓库：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/13.png?raw=true)
 
 拉取centos7（拉取latest的话后续操作会出错）
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/14.png?raw=true)
 
 查看当前系统中存在的镜像：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/15.png?raw=true)
 
 创建并运行Docker容器（为了方便检测后续wordpress搭建是否成功，需设置端口映射（-p），将容器端口80 映射到主机端口8888，Apache和MySQL需要 systemctl 管理服务启动，需要加上参数 --privileged 来增加权，并且不能使用默认的bash，换成 init，否则会提示 Failed to get D-Bus connection: Operation not permitted ，命令如下 ）
 
 ***注：看了CTO的解决办法发现端口映射可解决和之前搭建WordPress冲突的问题。
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/16.png?raw=true)
 
 查看已启动容器：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/17.png?raw=true)
 
 进入容器前台（容器id可以只写前几位，如 ：145）
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/18.png?raw=true)
 
 **接下来参照实验2搭建[WordPress](https://github.com/eric-ruhu/CloudComputing/tree/master/Website)**
 
@@ -142,9 +142,9 @@ Docker命令的基本格式
 
 > chown -R apache:apache /var/www/html/*
 
-在网页上输入[106.54.62.70:8888](http://106.54.62.70:8888/wp-admin/install.php)出现如图所示则表示安装完成：
+**配置完WordPress后，**在网页上输入[106.54.62.70:8888](http://106.54.62.70:8888/wp-admin/install.php)出现如图所示则表示安装完成：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/19.png?raw=true)
 
 ##### 创建新的镜像
 
@@ -152,7 +152,7 @@ Docker命令的基本格式
 
 > docker ps -a 
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/20.png?raw=true)
 
 创建新的镜像：
 
@@ -164,12 +164,12 @@ Docker命令的基本格式
 
 > docker commit -m “website” -a “ruhu” 14563598c483 ruhu/cloud_computing:wordpress
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/21.png?raw=true)
 
 ***注：这种提交类似于git协议的提交，同样这里提交的镜像只保存在本地。后续可以提交到远程镜像仓库，比如Docker Hub。
 查看镜像：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/22.png?raw=true)
 
 ***注：接下来要为新建的镜像打上标签（Tag），否则后续推送镜像到Docker Hub的时候将出现“ denied: requested access to the resource is denied”的错误。关于这个错误的解答详见[stackoverflow](https://stackoverflow.com/questions/41984399/denied-requested-access-to-the-resource-is-denied-docker)。
 Tag命令：
@@ -180,27 +180,27 @@ Tag命令：
 
 > docker tag 0b44c5a9f250 ruhu/cloud_computing:wordpress
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/23.png?raw=true)
 
 查看镜像：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/24.png?raw=true)
 
 ##### 推送镜像
 
 shell登录Docker Hub:
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/25.png?raw=true)
 
 推送镜像：
 
 > docker push docker-hub-username/REPOSITORY:TAG
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/26.png?raw=true)
 
 在Docker Hub上查看新上传的镜像：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/27.png?raw=true)
 
 ### 部分问题解决方法
 
@@ -208,24 +208,25 @@ shell登录Docker Hub:
 
 https://mirrors.tuna.tsinghua.edu.cn/help/centos/
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/28.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/29.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/30.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/31.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/32.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/33.png?raw=true)
 
 2、service命令无法用
 
 输入如图两行命令：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/34.png?raw=true)
 
 可以用了！！
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/35.png?raw=true)
+
