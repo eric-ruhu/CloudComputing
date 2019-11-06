@@ -110,7 +110,7 @@ Docker命令的基本格式
 
 **接下来参照实验2搭建[WordPress](https://github.com/eric-ruhu/CloudComputing/tree/master/Website)**
 
-(***注：按照实验2的步骤一步一步做，之前的步骤就没有写下来了和试验2相同，我从安装WordPress开始写起，老师后面检验的话直接打开[106.54.62.70:8888](http://106.54.62.70:8888/wp-admin/install.php)就可以了！！因为我映射另外端口的话，之前的ip地址还在。***安装WordPress按照下面的步骤，yum下载过慢，service httpd restarted有问题见最下面的解决方法！)
+(**注：按照实验2的步骤一步一步做，之前的步骤就没有写下来了和试验2相同，我从安装WordPress开始写起，老师后面检验的话直接打开[106.54.62.70:8888](http://106.54.62.70:8888/wp-admin/install.php)就可以了！！因为我映射另外端口的话，之前的ip地址还在。安装WordPress按照下面的步骤，yum下载过慢，service httpd restarted有问题见最下面的解决方法！)**
 
 ##### 安装WordPress
 
@@ -142,7 +142,7 @@ Docker命令的基本格式
 
 > chown -R apache:apache /var/www/html/*
 
-**配置完WordPress后，**在网页上输入[106.54.62.70:8888](http://106.54.62.70:8888/wp-admin/install.php)出现如图所示则表示安装完成：
+**配置完WordPress后，在网页上输入[106.54.62.70:8888](http://106.54.62.70:8888/wp-admin/install.php)出现如图所示则表示安装完成：**
 
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/19.png?raw=true)
 
