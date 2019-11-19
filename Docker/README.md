@@ -240,13 +240,13 @@ https://mirrors.tuna.tsinghua.edu.cn/help/centos/
 
 2、创建工作目录
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/36.png?raw=true)
 
 3、创建并编写Dockerfile文件
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/37.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/38.png?raw=true)
 
 **（这里的yum就是老师给的php安装的时候需要装的）**
 
@@ -254,23 +254,23 @@ https://mirrors.tuna.tsinghua.edu.cn/help/centos/
 
 4、创建镜像
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/39.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/40.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/41.png?raw=true)
 
 5、创建容器
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/42.png?raw=true)
 
 ***注：-v 本机目录/myweb 挂载到容器内的/var/www/html目录
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/43.png?raw=true)
 
 6、打开容器
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/44.png?raw=true)
 
 ***注：将容器的80端口映射到到宿主机上的8000端口,并运行服务脚本。
 
@@ -278,97 +278,97 @@ https://mirrors.tuna.tsinghua.edu.cn/help/centos/
 
 > 106.54.62.70:8000
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/45.png?raw=true)
 
 在/var/www/html/处创建一个空白文件info.php：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/46.png?raw=true)
 
 我们添加如下内容:
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/47.png?raw=true)
 
 ***注：发现这个内容只需要添加一次，因为后面如果重新创建容器好像会自动存在。
 
 > [106.54.62.70:8000/info.php](http://106.54.62.70:8000/info.php)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/48.png?raw=true)
 
 #### 构建MySQL镜像
 
 1、创建目录
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/49.png?raw=true)
 
 2、创建并编写Dockerfile文件
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/50.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/51.png?raw=true)
 
 3、创建并编写setup.sql文件
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/52.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/53.png?raw=true)
 
 4、创建并编写start.sh文件
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/54.png?raw=true)
 
 5、创建并编写start2.sh文件
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/55.png?raw=true)
 
 6、创建并编写server.cnf文件
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/56.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/57.png?raw=true)
 
 7、拖入文件
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/58.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/59.png?raw=true)
 
 **（跟Dockerfile同一目录下）**
 
 8、创建镜像
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/60.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/61.png?raw=true)
 
 9、创建容器
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/62.png?raw=true)
 
 10、打开容器并进入容器前台，进入MySQL后show databases; 
 
 可以看到有WordPress数据库
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/63.png?raw=true)
 
 #### 构建WordPress镜像
 
 这里把之前实验WordPress的文档直接复制
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/64.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/65.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/66.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/67.png?raw=true)
 
-去html下创建一个wp-content文件，内容为上图中的内容 
+去html下创建一个wp-content文件，内容为上图中的内容 ：
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/68.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/69.png?raw=true)
 
-完成！！！
+完成！！！[106.54.62.70:8000](http://106.54.62.70:8000/wp-admin/install.php)
 
 参考：
 
@@ -381,3 +381,5 @@ https://www.cnblogs.com/hukey/p/5635575.html
 https://yq.aliyun.com/articles/617789
 
 https://blog.csdn.net/llfjfz/article/details/95501675
+
+感谢CTO的帮助！！！找了很多教程，实践中遇到很多小问题CTO都帮忙解答，非常感谢！！
