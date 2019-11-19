@@ -360,6 +360,8 @@ https://mirrors.tuna.tsinghua.edu.cn/help/centos/
 
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/66.png?raw=true)
 
+***注：数据库主机这里要写 ip:MySQL映射端口
+
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/67.png?raw=true)
 
 去html下创建一个wp-content文件，内容为上图中的内容 ：
