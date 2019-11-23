@@ -232,7 +232,65 @@ https://mirrors.tuna.tsinghua.edu.cn/help/centos/
 
 ## 利用Dockerfile文件创建包含WordPress的镜像
 
+1、创建工作目录
 
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/36.png?raw=true)
+
+2、将文件拖入目录下（与Dockerfile同目录）
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/37.png?raw=true)
+
+3、创建并编辑Dockerfile文件
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/38.png?raw=true)
+
+4、创建并编辑install.sh文件
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/39.png?raw=true)
+
+5、创建并编辑server.cnf文件
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/40.png?raw=true)
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/41.png?raw=true)
+
+6、创建并编辑setup.sh文件
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/42.png?raw=true)
+
+7、创建并编辑setup.sql文件
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/43.png?raw=true)
+
+8、创建并编辑start.sh文件
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/44.png?raw=true                                                                                                                                                                                                                )
+
+9、创建镜像
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/45.png?raw=true)
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/46.png?raw=true)
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/47.png?raw=true)
+
+10、创建容器
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/48.png?raw=true)
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/49.png?raw=true)
+
+**打开容器并进入容器前台，进入MariaDB后show databases;可以看到有wordpress数据库**
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/50.png?raw=true)
+
+11、测试[106.54.62.70:9999](http://106.54.62.70:9999/)
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/51.png?raw=true)
+
+**选完语言之后连接数据库时，数据库主机直接写localhost就好**
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/52.png?raw=true)
 
 完成！！！
 
