@@ -242,7 +242,7 @@ https://mirrors.tuna.tsinghua.edu.cn/help/centos/
 
 3、创建并编辑Dockerfile文件
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Docker/docker_images/54.png?raw=true)
 
 4、创建并编辑install.sh文件
 
