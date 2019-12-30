@@ -12,9 +12,10 @@
 
 ## 实验目录
 
-* [实验一](https://github.com/eric-ruhu/CloudComputing/tree/master/Basis)
-* [实验二](https://github.com/eric-ruhu/CloudComputing/tree/master/Website)
-* [实验三](https://github.com/eric-ruhu/CloudComputing/tree/master/Docker)
+* [Basis](https://github.com/eric-ruhu/CloudComputing/tree/master/Basis)
+* [Website](https://github.com/eric-ruhu/CloudComputing/tree/master/Website)
+* [Docker](https://github.com/eric-ruhu/CloudComputing/tree/master/Docker)
+* [Ceph](https://github.com/eric-ruhu/CloudComputing/tree/master/Ceph)
 
 ## 注意事项
 
@@ -31,3 +32,4 @@
 > git commit -m "message"
 >
 > git push
+
