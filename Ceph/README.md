@@ -6,25 +6,25 @@
 
 * 更改主机名
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/1.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/2.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/3.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/4.png?raw=true)
 
 * 重启
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/5.png?raw=true)
 
 * 修改完成
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/6.png?raw=true)
 
 * 查看ip
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/7.png?raw=true)
 
 ### 步骤1-配置所有节点
 
@@ -34,33 +34,33 @@
 
 * 在所有节点上创建一个名为“ **cephuser** ” 的新用户
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/8.png?raw=true)
 
 * 为“ cephuser”配置sudo，运行以下命令为用户创建一个sudoers文件，并使用sed编辑/ etc / sudoers文件
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/9.png?raw=true)
 
 #### 安装和配置NTP
 
 ***注:安装NTP以同步所有节点上的日期和时间。
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/10.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/11.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/12.png?raw=true)
 
 #### 安装Open-vm-tools
 
 * 在VMware内部运行所有节点，则需要安装此虚拟化实用程序。
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/13.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/14.png?raw=true)
 
 #### 禁用SELinux
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/15.png?raw=true)
 
 ### ~~***(做到这步复制虚拟机！！！！！)***~~
 
@@ -68,21 +68,21 @@
 
 * mon1
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/16.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/17.png?raw=true)
 
 * osd1
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/18.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/19.png?raw=true)
 
 * osd2
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/20.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/21.png?raw=true)
 
 #### 配置主机文件（所有节点）
 
@@ -90,27 +90,27 @@
 
 * ceph-admin
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/22.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/23.png?raw=true)
 
 * mon1
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/24.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/25.png?raw=true)
 
 * osd1
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/26.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/27.png?raw=true)
 
 * osd2
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/28.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/29.png?raw=true)
 
 **尝试使用主机名在服务器之间ping通，以测试网络连接。**
 
@@ -118,7 +118,7 @@
 
 ~~**注：这里要将所有的虚拟机全部打开要不然ping不通**~~
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/30.png?raw=true)
 
 ### 第2步-配置SSH服务器
 
@@ -126,33 +126,35 @@
 
 * 为“ **cephuser** ” 生成ssh密钥，划线位置全部直接回车将密码短语留空/空白。
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/31.png?raw=true)
 
 * 为ssh配置创建配置文件
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/32.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/33.png?raw=true)
 
 * 更改配置文件的权限
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/34.png?raw=true)
 
 * 使用ssh-copy-id命令将SSH密钥添加到所有节点
 
-![]()
+**问题：**
 
-~~**注：这里要将所有的虚拟机全部打开要不然会提示以上错误连接不到**~~
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/35.png?raw=true)
 
-![]()
+~~**注：这里要将所有的虚拟机全部打开要不然输入命令会提示以上错误表示连接不到**~~
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/36.png?raw=true)
+
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/37.png?raw=true)
 
 （箭头处输入密码）
 
 * 完成后，尝试从ceph-admin节点访问osd1服务器
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/38.png?raw=true)
 
 成功！！！
 
@@ -162,25 +164,25 @@
 
 * 登录到ceph-admin节点并启动firewalld
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/39.png?raw=true)
 
 * 打开端口80、2003和4505-4506，然后重新加载防火墙
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/40.png?raw=true)
 
 * 从ceph-admin节点登录到监视节点“ mon1”，然后启动firewalld,在Ceph监视节点上打开新端口，然后重新加载防火墙。
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/41.png?raw=true)
 
 * 打开每个osd节点上的端口6800-7300-osd1，osd2，打开端口并重新加载防火墙
 
 * osd1
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/42.png?raw=true)
 
 * osd2
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/43.png?raw=true)
 
 防火墙配置完成。
 
@@ -190,13 +192,13 @@
 
 添加Ceph存储库，并使用yum命令安装Ceph部署工具' **ceph-deploy** '。
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/44.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/45.png?raw=true)
 
 **问题：**
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/46.png?raw=true)
 
 （**解决：**可能是依赖包没下载完全，在第二条命令后面加上 --skip-broken 后安装一次，再按原命令安装一次就可以了）
 
@@ -204,25 +206,25 @@
 
 * 创建新的群集目录
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/47.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/48.png?raw=true)
 
 * 使用“ **ceph** **-deploy** ”命令创建一个新的集群配置，将监视节点定义为“ **mon1** ”，该命令将在集群目录中生成Ceph集群配置文件'ceph.conf'。
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/49.png?raw=true)
 
 * 编辑ceph.conf文件，在[global]块下，添加配置
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/50.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/51.png?raw=true)
 
 #### **在所有节点上安装Ceph**
 
 从ceph-admin节点在所有其他节点上安装Ceph这可以通过单个命令完成。
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/52.png?raw=true)
 
 #### ~~**在安装上卡住了，在所有节点上用以下方法**~~
 
@@ -268,105 +270,105 @@
 
 * ceph-admin
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/53.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/54.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/55.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/56.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/57.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/58.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/59.png?raw=true)
 
 **（mon1，osd1，osd2用同上步骤安装ceph，以下再给出mon1的详细步骤，osd1，osd2同上）**
 
 * mon1
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/60.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/61.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/62.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/63.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/64.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/65.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/66.png?raw=true)
 
 * osd1
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/67.png?raw=true)
 
 * osd2
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/68.png?raw=true)
 
 下面这一句需要mon1节点执行，修改主机名为mon1
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/69.png?raw=true)
 
 * 将ceph-mon部署在mon1节点上。
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/70.png?raw=true)
 
 * 该命令将创建监视键，并使用“ ceph”命令检查并获取键。
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/71.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/72.png?raw=true)
 
 #### 添加OSD节点
 
 * 添加两个OSD进程
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/73.png?raw=true)
 
 从管理节点执行ceph-deploy来准备OSD
 
 **这里要到cluster目录下执行命令要不然会提示找不到ceph.conf文件**
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/74.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/75.png?raw=true)
 
 激活OSD
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/76.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/77.png?raw=true)
 
 * 用ceph-deploy把配置文件和admin密钥复制到管理节点和Ceph节点
 
 **这样每次执行Ceph命令时就不用指定monitor地址和ceph.client.admin.keyring**
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/78.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/79.png?raw=true)
 
 * 确保对ceph.client.admin.keyring有正确的操作权限
 
 **（在所有节点上执行该命令）**
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/80.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/81.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/82.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/83.png?raw=true)
 
 * 查看集群健康运行状况和集群状态。
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/84.png?raw=true)
 
-![]()
+![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/85.png?raw=true)
 
 **可以看到成功构建了一个新的Ceph集群！！！！！**
 
@@ -374,5 +376,5 @@
 
 书＋[教程](https://www.howtoforge.com/tutorial/how-to-build-a-ceph-cluster-on-centos-7/#install-cephdeploy-on-the-cephadmin-node)
 
-#### **感谢朱朱老师和CTO的鼎力相助！！！**
+### **感谢朱朱老师和CTO的鼎力相助！！！**
 
