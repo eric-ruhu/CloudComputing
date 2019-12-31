@@ -229,14 +229,19 @@
 #### ~~**在安装上卡住了，在所有节点上用以下方法**~~
 
 >yum -y install epel-release
+>
 >yum -y install yum-plugin-priorities
+>
 >sudo yum install -y https://download.ceph.com/rpm-jewel/el7/noarch/ceph-release-1-0.el7.noarch.rpm
 >
 >
 >
 >添加ceph仓库：
+>
 >sudo vi /etc/yum.repos.d/ceph.repo
+>
 >#添加如下配置
+>
 >[ceph]
 >name=Ceph packages for $basearch
 >baseurl=http://mirrors.163.com/ceph/rpm-jewel/el7/$basearch
