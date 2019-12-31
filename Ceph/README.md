@@ -34,13 +34,33 @@
 
 * 在所有节点上创建一个名为“ **cephuser** ” 的新用户
 
+> useradd -d /home/cephuser -m cephuser
+>
+> passwd cephuser
+
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/8.png?raw=true)
 
 * 为“ cephuser”配置sudo，运行以下命令为用户创建一个sudoers文件，并使用sed编辑/ etc / sudoers文件
 
+> echo "cephuser ALL = (root) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/cephuser
+>
+> chmod 0440 /etc/sudoers.d/cephuser
+>
+> sed -i s'/Defaults requiretty/#Defaults requiretty'/g /etc/sudoers
+
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/9.png?raw=true)
 
 #### 安装和配置NTP
+
+> yum install -y ntp ntpdate ntp-doc
+>
+> ntpdate 0.us.pool.ntp.org
+>
+> hwclock --systohc
+>
+> systemctl enable ntpd.service
+>
+> systemctl start ntpd.service
 
 ***注:安装NTP以同步所有节点上的日期和时间。
 
@@ -54,11 +74,15 @@
 
 * 在VMware内部运行所有节点，则需要安装此虚拟化实用程序。
 
+> yum install -y open-vm-tools
+
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/13.png?raw=true)
 
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/14.png?raw=true)
 
 #### 禁用SELinux
+
+> sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
 
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/15.png?raw=true)
 
@@ -126,6 +150,8 @@
 
 * 为“ **cephuser** ” 生成ssh密钥，划线位置全部直接回车将密码短语留空/空白。
 
+> ssh-keygen
+
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/31.png?raw=true)
 
 * 为ssh配置创建配置文件
@@ -139,6 +165,14 @@
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/34.png?raw=true)
 
 * 使用ssh-copy-id命令将SSH密钥添加到所有节点
+
+> ssh-keyscan osd1 osd2  mon1 >> ~/.ssh/known_hosts
+>
+> ssh-copy-id osd1
+>
+> ssh-copy-id osd2
+>
+> ssh-copy-id mon1
 
 **问题：**
 
@@ -162,11 +196,9 @@
 
 我们将使用防火墙保护系统。在此步骤中，我们将在所有节点上启用firewalld，然后打开ceph-admon，ceph-mon和ceph-osd所需的端口。
 
-* 登录到ceph-admin节点并启动firewalld
+* 登录到ceph-admin节点并启动firewalld，打开端口80、2003和4505-4506，然后重新加载防火墙
 
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/39.png?raw=true)
-
-* 打开端口80、2003和4505-4506，然后重新加载防火墙
 
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/40.png?raw=true)
 
@@ -356,7 +388,7 @@
 
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/73.png?raw=true)
 
-从管理节点执行ceph-deploy来准备OSD
+* 从管理节点执行ceph-deploy来准备OSD
 
 **这里要到cluster目录下执行命令要不然会提示找不到ceph.conf文件**
 
@@ -364,7 +396,7 @@
 
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/75.png?raw=true)
 
-激活OSD
+* 激活OSD
 
 ![](https://github.com/eric-ruhu/CloudComputing/blob/master/Ceph/ceph_images/76.png?raw=true)
 
