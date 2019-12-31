@@ -322,7 +322,7 @@
 >
 >priority=1
 >
->
+>#####################################（配置结束分界线）
 >
 >yum -y install ceph ceph-radosgw
 
